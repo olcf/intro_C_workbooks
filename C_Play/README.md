@@ -70,7 +70,16 @@ git clone
 
 We will use Unix commands to change to the directory where the code is. 
 
-We will use the GNU compiler to compile this code. The compiler translates the code into machine language that the computer can understand and writes an executable file for you to run. This initial translation of all of the code is what gives compiled languages their speed for HPC because no time is need for the computer to interpret the code as it runs. 
+```
+cd intro_C_workbook/C_Play
+```
+
+We will use the GNU compiler to compile this code. The compiler translates the code into 
+machine language that the computer can understand and writes an executable file for you to run. 
+This initial translation of all of the code is what gives compiled languages their speed for HPC 
+because no time is need for the computer to interpret the code as it runs. 
+
+***Exercise 1***
 
 The compile command for the GNU compiler is `gcc`, Compile the code with:
 
@@ -95,6 +104,8 @@ Play with this code by running it with different numbers of rows.
 * How tall are the top semi-circles the the heart? 
 
 **Put Your Initals in the Heart** 
+
+***Exercise 2****
 
 Now let’s modify the code by changing the printed characters to be your initial. 
 
@@ -130,7 +141,7 @@ Line 9 of the code is the first i-based loop used to generate the top part of th
 for(i = rows/2; i <= rows; i+=2){
 ```
 
-***Exerciese 2 and 3***
+***Exerciese 4***
 
 What happens to the shape of the heart if we change `; i+=2` on the end of the loop to `; i+=3`?
 
@@ -167,11 +178,6 @@ In English this says
 So, if you have entered 6 for the number of rows, 
 this loop will start at 3, (6/2), and then move to 5, (3+2), and then to 7, (5+2), but 7 is greater than the number of rows, (6), so the loop will stop running before it executes that thrid itteration of the loop. If you compile and run the origial code, heart.c, you will see that if you pick 6 rows, the top half circles of the heart are only two rows tall. 
 
-If you want to explore how the range of i values and height of the top if the heart change with the number of rows you choose, then copy your herat.c file to a heart_count.c file and add the following print statement just after line 9. 
-
-```
-printf("i %d",i);
-```
 The %d is formating that tells the program to print an integer. 
 
 If you look back over the for loops of the heart code, you will see that C has a few differnt ways of incrementing its for loop variables. 
@@ -182,9 +188,15 @@ If you look back over the for loops of the heart code, you will see that C has a
 
 `i--` decrese j by 1 at the begining of each loop. 
 
+***Exploration***
 
+1. If you want to explore how the range of i values and height of the top if the heart change with the number of rows you choose, then copy your herat.c file to a heart_count.c file and add the following print statement just after line 9. 
 
-If there is time left, play with all the for loop limits to change the shape of the heart. 
+```
+printf("i %d",i);
+```
+
+2. If there is time left, play with all the for loop limits to change the shape of the heart. 
 
 
 
