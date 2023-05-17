@@ -70,9 +70,7 @@ git clone
 
 We will use Unix commands to change to the directory where the code is. 
 
-We will use the GNU compiler to compile this code. The compiler translates the code into machine language that the computer can understand and writes an executable file for you to run. 
-
-This initial translation of all of the code is what gives compiled languages their speed for HPC because no time is need for the computer to interpret the code as it runs. 
+We will use the GNU compiler to compile this code. The compiler translates the code into machine language that the computer can understand and writes an executable file for you to run. This initial translation of all of the code is what gives compiled languages their speed for HPC because no time is need for the computer to interpret the code as it runs. 
 
 The compile command for the GNU compiler is `gcc`, Compile the code with:
 
