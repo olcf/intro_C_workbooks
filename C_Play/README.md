@@ -89,10 +89,11 @@ To run the program:
 You should see a heart of the size you specified by giving the program the number of rows. 
 Play with this code by running it with different numbers of rows. 
 
-•	What part of the heart has the number of rows you chose? 
-•	What character is the heart made of? 
+* What part of the heart has the number of rows you chose? 
+* What character is the heart made of? 
+* How tall are the top semi-circles the the heart? 
 
-**Put your Initals in the Heart** 
+**Put Your Initals in the Heart** 
 
 Now let’s modify the code by changing the printed characters to be your initial. 
 
