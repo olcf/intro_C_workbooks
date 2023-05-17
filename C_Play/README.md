@@ -53,7 +53,7 @@ int main() {
     return 0;
 }
 ```
-
+ This code is also included in this repository in a file called heart.c. 
 
 **Compile and Run the Code** 
 
@@ -188,7 +188,7 @@ If you look back over the for loops of the heart code, you will see that C has a
 
 `i--` decrese j by 1 at the begining of each loop. 
 
-***Exploration***
+***Explorations***
 
 1. If you want to explore how the range of i values and height of the top if the heart change with the number of rows you choose, then copy your herat.c file to a heart_count.c file and add the following print statement just after line 9. 
 
@@ -202,7 +202,6 @@ printf("i %d",i);
 
 
 **The donut code** 
-
 
 
 
