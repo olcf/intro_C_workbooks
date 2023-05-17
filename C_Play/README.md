@@ -150,6 +150,7 @@ for(i = rows/2; i <= rows; i+=2){
 
 ```
 In English this says 
+
 `For`  for
 
 `i-rows/2;`   i equal to the number of rows divided by 2,
