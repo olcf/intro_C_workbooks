@@ -129,11 +129,11 @@ for(i = rows/2; i <= rows; i+=2){
 
 ```
 
-What happens to the shape of the heart if we change `; i+=2’ on the end of the loop to `; i+=3’?
+What happens to the shape of the heart if we change `; i+=2` on the end of the loop to `; i+=3`?
 
 Make this change and recompile and run the code. 
  
-What happens to the shape of the heart if we change `; i+=3’ on the end of the loop to `; i+=1’?
+What happens to the shape of the heart if we change `; i+=3` on the end of the loop to `; i+=1`?
 
 Make this change and recompile and run the code. 
 
