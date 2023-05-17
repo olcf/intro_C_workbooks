@@ -87,7 +87,7 @@ To run the program:
 ```
 
 You should see a heart of the size you specified by giving the program the number of rows. 
-Play with this code by running it with different numbers of row. 
+Play with this code by running it with different numbers of rows. 
 •	What part of the heart has the number of rows you chose? 
 •	What character is the heart made of? 
 
