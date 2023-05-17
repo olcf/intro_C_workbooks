@@ -84,6 +84,7 @@ To run the program:
 
 ```
 ./a.out
+
 ```
 
 You should see a heart of the size you specified by giving the program the number of rows. 
@@ -119,15 +120,17 @@ To save your changes. Type “:wq”.  This will close vi and save your changes.
 
 Recompile and run the code. 
 
-**Change The Shape of the Heart**
+
+**Change the Shape of the Heart**
 
 Now let’s try changing the shape of the heart. We’ll do this as an experiment. 
 
 Line 9 of the code is the first i-based loop used to generate the top part of the heart, 
 ```
 for(i = rows/2; i <= rows; i+=2){
-
 ```
+
+***Exerciese 2 and 3**
 
 What happens to the shape of the heart if we change `; i+=2` on the end of the loop to `; i+=3`?
 
