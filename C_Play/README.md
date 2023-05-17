@@ -1,4 +1,4 @@
-Goals
+**Goals**
 * Learn to compile and run a C-code.
 * Play with a few basic coding structures in C.
 * Itentify and ready for loops in C. 
