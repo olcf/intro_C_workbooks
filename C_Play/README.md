@@ -1,11 +1,12 @@
-Below is a code written in C that draws a heart on the screen in ASCII charaters. 
-The user is able to control the size of the heart by entering the nubmer of rows for the main body of the heart.
-We are going to use this code to introduce you to C. 
-
 Goals
 * Learn to compile and run a C-code.
 * Play with a few basic coding structures in C.
 * Itentify and ready for loops in C. 
+
+Below is a code written in C that draws a heart on the screen in ASCII charaters. 
+The user is able to control the size of the heart by entering the nubmer of rows for the main body of the heart.
+We are going to use this code to introduce you to C. 
+
 
 ```
 #include <stdio.h>
