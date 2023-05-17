@@ -174,7 +174,7 @@ If you look back over the for loops of the heart code, you will see that C has a
 
 `i+=2` increase i by two at the beginig of each loop. 
 
-`j++' increase j by 1 at the beginning of each loop. This could also be written as `j+=1`
+`j++` increase j by 1 at the beginning of each loop. This could also be written as `j+=1`
 
 `i--` decrese j by 1 at the begining of each loop. 
 
