@@ -105,7 +105,7 @@ Play with this code by running it with different numbers of rows.
 
 **Put Your Initals in the Heart** 
 
-***Exercise 2****
+***Exercise 2***
 
 Now let’s modify the code by changing the printed characters to be your initial. 
 
