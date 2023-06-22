@@ -66,3 +66,24 @@ printf(“The value of the float is %.2f\n”, x);
 * x represents the variable whose value is used in the format tag
 
 Result: The value of the float is 3.14
+
+There is a code called data_types.c that you can use to explore the data types. 
+
+To compile the C program, use the gcc compiler to compile the C code into an executable:
+
+```
+$ gcc -o data_types data_types.c
+```
+-o is compiler flag that allows you to name the executable.
+
+List the directory using `ls` to verify your data_type executable was created. 
+
+Then do 
+
+```
+$ ./data_type
+```
+to run the program. 
+
+Once you see that it ran, use `vi` to view the code and play with the variables. Remember to recompile with each change. 
+
