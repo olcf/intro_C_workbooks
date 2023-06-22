@@ -1,7 +1,117 @@
 **Goals**
 * Learn to compile and run a C-code.
 * Play with a few basic coding structures in C.
-* Identify and read `for loops` in C. 
+* Identify and read `for loops` in C.
+
+***Git the Repo***
+
+Login to the open DTN or ascent and clone this repository in your home area if you have not already done so. 
+
+Login help: See slide 10 : https://docs.google.com/presentation/d/1xUCsLPY6ehkugdraxgoWCLAmrkWOod6IT0S07BYeDIg/edit?usp=sharing
+
+To clone: 
+
+```
+$ git clone https://github.com/olcf/intro_C_workbooks.git
+
+```
+
+We will use Unix commands to change to the directory where the code is. 
+
+```
+$ cd intro_C_workbook/C_Play
+```
+
+***The donut code**(
+
+We'll use this fun code to learn how to compile and run a C code. 
+
+
+
+About the code: 
+
+This code uses ascii characters (those on your keyboard) as pixels. 
+
+To generally understand what it is doing, think of the 3-D shape of a donut, now imagine drawing just the part you see facing you in 2-D on a flat sheet of paper. The mathematical terminology for that 2-D drawing process is "making a 2-D projection of a 3-D object". The program uses geometry to project a 3-D donut onto the 2-D plane of your screen and it renders that projection in ASCII characters. It then rotates the donut and does the project again. It repeats this process until the user types "c" while holding "control" down to stop the program execution. The calculation and rendering of the projection and the rotation are handled by `for loops`.
+
+```
+#include <stdio.h>
+#include <string.h>
+int k;
+double sin() ,cos();
+main(){
+    float A=0, B=0, i, j, z[1760];
+    char b[1760];
+    printf("\x1b[2J");
+    for(; ; ) {
+        memset(b,32,1760);
+        memset(z,0,7040);
+        for(j=0; 6.28>j; j+=0.03) {
+            for(i=0; 6.28 >i; i+=0.01) {
+                float sini=sin(i),
+                      cosj=cos(j),
+                      sinA=sin(A),
+                      sinj=sin(j),
+                      cosA=cos(A),
+                      cosj2=cosj+2,
+                      mess=1/(sini*cosj2*sinA+sinj*cosA+5),
+                      cosi=cos(i),
+                      cosB=cos(B),
+                      sinB=sin(B),
+                      t=sini*cosj2*cosA-sinj* sinA;
+                int x=40+30*mess*(cosi*cosj2*cosB-t*sinB),
+                    y= 12+15*mess*(cosi*cosj2*sinB +t*cosB),
+                    o=x+80*y,
+                    N=8*((sinj*sinA-sini*cosj*cosA)*cosB-sini*cosj*sinA-sinj*cosA-cosi *cosj*sinB);
+                if(22>y&&y>0&&x>0&&80>x&&mess>z[o]){
+                    z[o]=mess;
+                    b[o]=".,-~:;=!*#$@"[N>0?N:0];
+                }
+            }
+        }
+        printf("\x1b[d");
+        for(k=0; 1761>k; k++)
+            putchar(k%80?b[k]:10);
+        A+=0.04;
+        B+= 0.02;
+    }
+}
+```
+The donut.c code is included in this repo. To compile the code: 
+
+We will use the GNU compiler to compile this code. The compiler translates the code into 
+machine language that the computer can understand and writes an executable file for you to run. 
+This initial translation of all of the code is what gives compiled languages their speed for HPC 
+because no time is need for the computer to interpret the code as it runs. 
+
+The compile command for the GNU compiler is `gcc`, Compile the code with:
+
+```
+$ gcc -o donut donut.c
+```
+
+This generates a file that you can run (an executable) called `donut’. -o is compiler flag that allows you to name the executable.
+
+To make sure the file is there do:
+
+```
+$ ls
+```
+
+```
+donut donut.c
+
+
+
+
+To run the code:
+```
+$ ./donut
+```
+To stop the program, hold down the control key while pressing "c". 
+
+
+
 
 Below is a code written in C that draws a heart on the screen in ASCII characters. 
 The user can control the size of the heart by entering the number of rows for the main body of the heart.
@@ -59,23 +169,6 @@ int main() {
  This code is also included in this repository in a file called heart.c. 
 
 **Compile and Run the Code** 
-
-Login to the open DTN or ascent and clone this repository in your home area if you have not already done so. 
-
-Login help: See slide 10 : https://docs.google.com/presentation/d/1xUCsLPY6ehkugdraxgoWCLAmrkWOod6IT0S07BYeDIg/edit?usp=sharing
-
-To clone: 
-
-```
-$ git clone https://github.com/olcf/intro_C_workbooks.git
-
-```
-
-We will use Unix commands to change to the directory where the code is. 
-
-```
-$ cd intro_C_workbook/C_Play
-```
 
 We will use the GNU compiler to compile this code. The compiler translates the code into 
 machine language that the computer can understand and writes an executable file for you to run. 
@@ -202,65 +295,6 @@ printf("i %d",i);
 ```
 
 2. If there is time left, play with all the `for loop` limits to change the shape of the heart. 
-
-
-**The donut code** 
-This code uses ascii characters (those on your keyboard) as pixels. 
-
-To generally understand what it is doing, think of the 3-D shape of a donut, now imagine drawing just the part you see facing you in 2-D on a flat sheet of paper. The mathematical terminology for that 2-D drawing process is "making a 2-D projection of a 3-D object". The program uses geometry to project a 3-D donut onto the 2-D plane of your screen and it renders that projection in ASCII characters. It then rotates the donut and does the project again. It repeats this process until the user types "c" while holding "control" down to stop the program execution. The calculation and rendering of the projection and the rotation are handled by `for loops`.
-
-```
-#include <stdio.h>
-#include <string.h>
-int k;
-double sin() ,cos();
-main(){
-    float A=0, B=0, i, j, z[1760];
-    char b[1760];
-    printf("\x1b[2J");
-    for(; ; ) {
-        memset(b,32,1760);
-        memset(z,0,7040);
-        for(j=0; 6.28>j; j+=0.03) {
-            for(i=0; 6.28 >i; i+=0.01) {
-                float sini=sin(i),
-                      cosj=cos(j),
-                      sinA=sin(A),
-                      sinj=sin(j),
-                      cosA=cos(A),
-                      cosj2=cosj+2,
-                      mess=1/(sini*cosj2*sinA+sinj*cosA+5),
-                      cosi=cos(i),
-                      cosB=cos(B),
-                      sinB=sin(B),
-                      t=sini*cosj2*cosA-sinj* sinA;
-                int x=40+30*mess*(cosi*cosj2*cosB-t*sinB),
-                    y= 12+15*mess*(cosi*cosj2*sinB +t*cosB),
-                    o=x+80*y,
-                    N=8*((sinj*sinA-sini*cosj*cosA)*cosB-sini*cosj*sinA-sinj*cosA-cosi *cosj*sinB);
-                if(22>y&&y>0&&x>0&&80>x&&mess>z[o]){
-                    z[o]=mess;
-                    b[o]=".,-~:;=!*#$@"[N>0?N:0];
-                }
-            }
-        }
-        printf("\x1b[d");
-        for(k=0; 1761>k; k++)
-            putchar(k%80?b[k]:10);
-        A+=0.04;
-        B+= 0.02;
-    }
-}
-```
-The donut.c code is included in this repo. To compile the code: 
-```
-$ gcc -o donut donut.c
-```
-To run the code:
-```
-$ ./donut
-```
-To stop the program, hold down the control key while pressing "c". 
 
 
 
