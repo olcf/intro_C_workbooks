@@ -22,7 +22,7 @@ We will use Unix commands to change to the directory where the code is.
 $ cd intro_C_workbook/C_Play
 ```
 
-***The donut code**(
+***The donut code***
 
 We'll use this fun code to learn how to compile and run a C code. 
 
