@@ -99,7 +99,8 @@ $ ls
 ```
 
 ```
-donut donut.c
+README.md	donut		donut.c		heart.c
+```
 
 
 
