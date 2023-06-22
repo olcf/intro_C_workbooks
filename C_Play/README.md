@@ -48,13 +48,14 @@ $ cd intro_C_workbook/C_Play
 
 ***The donut code***
 
+**NOTE: In all examples below the "$" is used to show the command prompt and should not be typed in when you copy the command.**
+
+
 We'll use this fun code to learn how to compile and run a C code. 
 
+*About the code:* 
 
-
-About the code: 
-
-This code uses ascii characters (those on your keyboard) as pixels. 
+This code uses ASCII characters (those on your keyboard) as pixels. 
 
 To generally understand what it is doing, think of the 3-D shape of a donut, now imagine drawing just the part you see facing you in 2-D on a flat sheet of paper. The mathematical terminology for that 2-D drawing process is "making a 2-D projection of a 3-D object". The program uses geometry to project a 3-D donut onto the 2-D plane of your screen and it renders that projection in ASCII characters. It then rotates the donut and does the project again. It repeats this process until the user types "c" while holding "control" down to stop the program execution. The calculation and rendering of the projection and the rotation are handled by `for loops`.
 
@@ -101,7 +102,7 @@ main(){
     }
 }
 ```
-The donut.c code is included in this repo. To compile the code: 
+The donut.c code is included in this repo. 
 
 We will use the GNU compiler to compile this code. The compiler translates the code into 
 machine language that the computer can understand and writes an executable file for you to run. 
@@ -116,7 +117,7 @@ $ gcc -o donut donut.c
 
 This generates a file that you can run (an executable) called `donut’. -o is compiler flag that allows you to name the executable.
 
-To make sure the file is there do:
+To make sure the file is there, do:
 
 ```
 $ ls
@@ -135,7 +136,22 @@ $ ./donut
 ```
 To stop the program, hold down the control key while pressing "c". 
 
+***The Heart Code***
 
+Enter the number of rows
+9
+  SSSS     SSSS
+ SSSSSS   SSSSSS
+SSSSSSSS SSSSSSSS
+SSSSSSSSSSSSSSSSS
+ SSSSSSSSSSSSSSS
+  SSSSSSSSSSSSS
+   SSSSSSSSSSS
+    SSSSSSSSS
+     SSSSSSS
+      SSSSS
+       SSS
+        S
 
 
 Below is a code written in C that draws a heart on the screen in ASCII characters. 
