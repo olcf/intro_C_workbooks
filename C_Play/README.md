@@ -138,6 +138,8 @@ To stop the program, hold down the control key while pressing "c".
 
 ***The Heart Code***
 
+```
+
 Enter the number of rows
 9
   SSSS     SSSS
@@ -152,7 +154,7 @@ SSSSSSSSSSSSSSSSS
       SSSSS
        SSS
         S
-
+```
 
 Below is a code written in C that draws a heart on the screen in ASCII characters. 
 The user can control the size of the heart by entering the number of rows for the main body of the heart.
