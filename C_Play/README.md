@@ -25,7 +25,7 @@
 **Goals**
 * Learn to compile and run a C-code.
 * Play with a few basic coding structures in C.
-* Identify and read `for loops` in C.
+* Identify and begin to understand how to read `for loops` in C.
 
 ***Git the Repo***
 
