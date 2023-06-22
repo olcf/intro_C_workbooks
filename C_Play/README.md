@@ -178,7 +178,7 @@ int main() {
         for(j = 1; j < rows-i; j+=2) {
             printf(" ");
         }
-        /* printing stars for left semi circle */
+        /* printing Ss for left semi circle */
         for(j = 1; j <= i; j++){
             printf("S");
         }
@@ -186,7 +186,7 @@ int main() {
         for(j = 1; j <= rows-i; j++){
             printf(" ");
         }
-        /* printing stars for right semi circle */
+        /* printing Ss for right semi circle */
         for(j = 1; j <= i; j++){
             printf("S");
         }
