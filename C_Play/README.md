@@ -344,12 +344,13 @@ for(i = rows/2; i <= rows; i+=2){
 For example, if the user chooses rows=9, i=4.5, which is not an integer. In this case, the compiler implicitly (automatically) interprets 4.5 as the integer 4. For most C compilers, variables that are declared as integers will be interpreted as just the part of the number left of the decimal for all non-integers entered. 
 
 If `i` is declared as an integer: 
+```
 user: i = 4.99 
 compiler: i = 4
 
 user: i = 3.14159 
 compiler: i = 3
-
+```
 
 ***Explorations***
 
