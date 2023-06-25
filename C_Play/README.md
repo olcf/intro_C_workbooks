@@ -321,7 +321,7 @@ In English this says,
 `{  ` Do this loop with all the code contained in the brackets. 
 
 So, if you have entered 6 for the number of rows, 
-this loop will start at 3, (6/2), and then move to 5, (3+2), and then to 7, (5+2), but 7 is greater than the number of rows, (6), so the loop will stop running before it executes that third iteration. If you compile and run the original code, heart.c, you will see that if you pick 6 rows, the top half circles of the heart are only two rows tall. 
+this loop will start at 3, (6/2), and then move to 5, (3+2), and then to 7, (5+2), but 7 is greater than the number of rows, (6), so the loop will stop running before it executes that third iteration. This means the top of the heart will be two rows tall. 
 
 The `%d` is formatting that tells the program to print an integer. 
 
