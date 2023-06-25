@@ -136,6 +136,10 @@ $ ./donut
 ```
 To stop the program, hold down the control key while pressing "c". 
 
+If you want to know more about the geometry used for the donut code here is an explanation:
+https://www.a1k0n.net/2011/07/20/donut-math.html
+
+
 ***The Heart Code***
 
 ```
