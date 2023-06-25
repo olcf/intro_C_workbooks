@@ -333,6 +333,24 @@ If you look back over the for loops of the heart code, you will see that there a
 
 `i--` decrease j by 1 at the beginning of each loop. 
 
+
+**Implicit Integer Conversion**
+
+Notice that `i`, `j` and `rows` are all declared as `integers` (whole numbers). However, if the user chooses an odd number for the number of rows, the first `for loop`, that determines how tall the top bumps of the heart are, looks like it would start counting with a non-whole number because `i` starts the count with a number that is equal to `rows/2`. 
+
+```
+for(i = rows/2; i <= rows; i+=2){
+```
+For example, if the user chooses rows=9, i=4.5, which is not an integer. In this case, the compiler implicitly (automatically) interprets 4.5 as the integer 4. For most C compilers, variables that are declared as integers will be interpreted as just the part of the number left of the decimal for all non-integers entered. 
+
+If `i` is declared as an integer: 
+user: i = 4.99 
+compiler: i = 4
+
+user: i = 3.14159 
+compiler: i = 3
+
+
 ***Explorations***
 
 1. If you want to explore how the range of i values and height of the top if the heart change with the number of rows you choose, then copy your heart.c file to a heart_count.c file and add the following print statement just after line 9. 
