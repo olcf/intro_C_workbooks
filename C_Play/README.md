@@ -113,7 +113,7 @@ because no time is need for the computer to interpret the code as it runs.
 The compile command for the GNU compiler is `gcc`, Compile the code with:
 
 ```
-$ gcc -o -lm donut donut.c
+$ gcc -lm -o donut donut.c
 ```
 This generates a file that you can run (an executable) called `donut’. -o is compiler flag that allows you to name the executable. The -lm flags links the math library that contains the sin and cos functions needed for the program. Compiler flags are special instruction for the compiler that you wouldn't want to code into your program directly because which flags you need depend on the selected compiler.
 
