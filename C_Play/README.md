@@ -62,6 +62,7 @@ To generally understand what it is doing, think of the 3-D shape of a donut, now
 ```
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 int k;
 double sin() ,cos();
 main(){
