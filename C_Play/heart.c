@@ -11,7 +11,7 @@ int main() {
         for(j = 1; j < rows-i; j+=2) {
             printf(" ");
         }
-        /* printing stars for left semi circle */
+        /* printing Ss for left semi circle */
         for(j = 1; j <= i; j++){
             printf("S");
         }
@@ -19,7 +19,7 @@ int main() {
         for(j = 1; j <= rows-i; j++){
             printf(" ");
         }
-        /* printing stars for right semi circle */
+        /* printing Ss for right semi circle */
         for(j = 1; j <= i; j++){
             printf("S");
         }
@@ -27,7 +27,7 @@ int main() {
         printf("\n");
     }
 
-    /* printing inverted start pyramid */
+    /* printing inverted S pyramid */
     for(i = rows; i >= 1; i--){
         for(j = i; j < rows; j++){
             printf(" ");
