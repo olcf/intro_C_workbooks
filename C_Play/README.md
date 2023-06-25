@@ -274,6 +274,14 @@ To save your changes. Type “:wq”.  This will close vi and save your changes.
 
 Recompile and run the code. 
 
+```
+$ gcc heart_mod.c
+```
+
+```
+$ ./a.out
+```
+
 
 **Change the Shape of the Heart**
 
