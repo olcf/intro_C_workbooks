@@ -292,7 +292,7 @@ Line 9 of the code is the first i-based loop used to generate the top part of th
 for(i = rows/2; i <= rows; i+=2){
 ```
 
-***Exercise 4***
+***Exercise 3***
 
 What happens to the shape of the heart if we change `; i+=2` on the end of the loop to `; i+=3`?
 
