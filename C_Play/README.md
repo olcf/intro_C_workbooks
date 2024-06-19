@@ -29,7 +29,7 @@
 
 ***Git the Repo***
 
-Login to the open DTN or ascent and clone this repository in your home area if you have not already done so. 
+Login to the open DTN or Odo and clone this repository in your home area if you have not already done so. 
 
 Login help: See slide 10 : https://docs.google.com/presentation/d/1xUCsLPY6ehkugdraxgoWCLAmrkWOod6IT0S07BYeDIg/edit?usp=sharing
 
